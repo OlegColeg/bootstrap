@@ -1,7 +1,9 @@
-body{
+
+header{
     display: flex;
     justify-content: center;
-}
+background-image:url(image/BUYPNG.png) ;
+}   
 .container{
     max-width: 1300px;
 }
@@ -17,9 +19,6 @@ body{
     align-items: center;
     justify-content: center;
    height: 800px;
-    background-color: aliceblue;
-
-
 }
 .LOGOBOX p{
     font-size: 40px;
