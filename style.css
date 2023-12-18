@@ -3,12 +3,24 @@ header{
     display: flex;
     justify-content: center;
 background-image:url(image/BUYPNG.png) ;
+background-size: cover;
 }   
 .container{
-    max-width: 1300px;
+    max-width: 1100px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+ 
+
 }
 .navbar{
+    width: 100%;
+    height: 70px;
     font-size: 20px;
+    border-radius: 20px;
 }
 .collapse{
     display: flex;
@@ -16,19 +28,182 @@ background-image:url(image/BUYPNG.png) ;
 }
 .LOGOBOX{
     display: flex;
-    align-items: center;
     justify-content: center;
-   height: 800px;
-}
-.LOGOBOX p{
-    font-size: 40px;
-    transition: 0.5s;
+    align-items: center;
 
-    
 }
-.LOGOBOX p:hover{
-    font-size: 50px;
-    text-decoration: underline;
-    transition: 0.5s;
-    
+.box1 {
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+.textlogo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+.origins {
+  max-height: 200px;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    font-family: 'Rammetto One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 180px;
+    color: white;
+    margin-top: 100px;
+}
+
+
+.EVERYTHING {
+    user-select: none;
+    background-color: antiquewhite;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-family: 'Rammetto One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 203px;
+    background: radial-gradient(50% 50% at 50% 50%, #9A635A 0%, #88554A 0.01%, #865348 58.85%, #3E1809 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 3px white;
+}
+
+.STARTS {
+    user-select: none;
+text-align: end;
+    letter-spacing: 15px;
+    width: 100%;
+    font-family: 'Faster One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    margin-left: 20px;
+    color: #371406;
+    -webkit-text-stroke: 3px white;
+}
+
+.Ioan {
+    user-select: none;
+    width: 100%;
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 125px;
+text-align: end;
+    color: transparent;
+    -webkit-text-stroke: 5px white;
+
+}
+
+
+@media only screen and (max-width: 1300px) {
+    /* Aici adaugi stilurile pentru ecrane cu lățimi de minimum 768px */
+    .origins {
+        font-size: 150px;
+    }
+    .EVERYTHING {
+        font-size: 40px;
+        line-height: 150px;
+       
+    }
+    .STARTS{
+        font-size: 40px;
+        line-height:40px;
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    /* Aici adaugi stilurile pentru ecrane cu lățimi de minimum 768px */
+    .origins {
+        font-size: 100px;
+    }
+    .EVERYTHING {
+        font-size: 40px;
+        line-height: 150px;
+       
+    }
+    .STARTS{
+        font-size: 40px;
+        line-height:40px;
+    }
+    .navbarbottom {
+        display: grid;
+        grid-template-columns: 300px; 
+        row-gap: 10px; /* Adjust the gap as needed */
+        list-style: none;
+    width: 100%;
+    
+    }
+  }
+  @media only screen and (max-width: 700px) {
+    /* Aici adaugi stilurile pentru ecrane cu lățimi de minimum 768px */
+    .origins {margin-top: 100px;
+        font-size: 80px;
+    }
+    .EVERYTHING {
+        margin-top: 100px;
+        font-size: 50px;
+        line-height: 20px;
+       
+    }
+    .STARTS{
+        margin-top: ;
+        font-size: 40px;
+        line-height:20px;
+    }
+    .navbarbottom {
+        display: grid;
+        grid-template-columns: 300px; 
+        column-gap: 5%;
+        row-gap: 10px; /* Adjust the gap as needed */
+        list-style: none;
+    width: 100%;
+    
+    }
+    .btn{
+        display: none;
+    }
+  }
+  @media only screen and (max-width: 450px) {
+    /* Aici adaugi stilurile pentru ecrane cu lățimi de minimum 768px */
+    .origins {margin-top: 80px;
+        font-size: 70px;
+    }
+    .EVERYTHING {
+        margin-top: 0px;
+        font-size: 30px;
+        line-height: 20px;
+        -webkit-text-stroke: 1px white;
+       
+    }
+    .STARTS{
+        margin-top: ;
+        font-size: 30px;
+        line-height:20px;
+        -webkit-text-stroke: 1px white;
+    }
+    .navbarbottom { 
+
+        display: grid;
+        grid-template-columns: 300px; /* Adjust the 200px as needed */
+        column-gap: 5%;
+        row-gap: 10px; /* Adjust the gap as needed */
+        list-style: none;
+    
+    }
+    .btn{
+        display: none;
+    }
+
+  }
