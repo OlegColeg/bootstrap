@@ -5,6 +5,23 @@ background-image:url(image/BUYPNG.png) ;
 background-size: cover;
 }   
 
+.coffee_name{
+font-family: 'Rammetto One';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+background: radial-gradient(50% 50%, #865348 58.85%, #3E1809 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+-webkit-text-stroke: 0.5px black;
+}
+.navbar{
+    margin-inline: 48px;
+}
+.coffee_row img, #tea_page img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .textlogo{
     width: 100%;
     display: flex;
@@ -142,5 +159,16 @@ text-align: end;
     }
 
   }
+  @media only screen and (max-width: 700px) {
+
+.coffee_row p{
+    font-size: 20px;
+}
+
+.navbar{
+    margin-inline: 0;
+}
+  }
+  
 
 
