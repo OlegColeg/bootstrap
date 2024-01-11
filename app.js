@@ -15,38 +15,133 @@ document.getElementById('btn_tea').addEventListener('click', function () {
     document.getElementById('tea_list').scrollIntoView();
 })
 document.getElementById('Accesorii').addEventListener('click', function () {
-    document.getElementById('containerElement').insertAdjacentHTML('beforeend', '<section id="coffee_page">' +
-        '<div class="container">' +
-        '<div class="coffee_row row pt-5">' +
-        '<div class="col-sm d-flex flex-column align-items-center">' +
-        '<img class="rounded-5" src="image/espresso.jpg" alt="Espresso" width="200px" height="200px">' +
-        '<h5 class="coffee_name mt-3">ESPRESSO</h5>' +
-        '<p>O explozie de pură energie într-o ceașcă mică. Gustul intens și aroma bogată te trezesc și te pregătesc pentru ziua care urmează.</p>' +
-        '<p style="font-family: \'Iceland\';">ml30 - 20Lei</p>' +
+        document.getElementById('containerCarusel').innerHTML = "";
+    document.getElementById('containerCarusel').insertAdjacentHTML('beforeend','<div id="demo" class="carousel slide" data-bs-ride="carousel">' +
+      '<!-- Indicators/dots -->' +
+      '<div class="carousel-indicators">' +
+        '<button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>' +
+        '<button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>' +
+        '<button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>' +
+        '<button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>' +
+        '<button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>' +
+        '<button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>' +
+      '</div>' +
+      '<!-- The slideshow/carousel -->' +
+      '<div class="carousel-inner bg-dark" style=" max-height: 500px;">' +
+        '<div class="carousel-item active">' +
+          '<img src="image/Accesorii (3).jpg" alt="Accesorii" class="d-block mx-auto" style="height: 500px;">' +
+          '<div class="carousel-caption">' +
+            '<button type="button" id="galeria" class="btn btn-dark border border-light">GALERIA</button>' +
+          '</div>' +
         '</div>' +
-        '<div class="col-sm d-flex flex-column align-items-center">' +
-        '<img class="rounded-5" src="image/cappuccino.jpg" alt="Cappuccino" width="200px" height="200px">' +
-        '<h5 class="coffee_name mt-3">CAPPUCCINO</h5>' +
-        '<p>Un dans armonios între espresso, lapte cald și spumă de lapte, încoronat cu un vârf de cacao. Este ca o îmbrățișare caldă în zilele reci de iarnă.</p>' +
-        '<p style="font-family: \'Iceland\';">ml200 - 25Lei</p>' +
-        '</div>' +
-        '<div class="col-sm d-flex flex-column align-items-center">' +
-        '<img class="rounded-5" src="image/lattecub.jpg" alt="Latte" width="200px" height="200px">' +
-        '<h5 class="coffee_name mt-3">LATTE</h5>' +
-        '<p>Un val de cafea delicată care se întâlnește cu laptele cald pentru un parfum rafinat, creând o băutură cremoasă și reconfortantă.</p>' +
-        '<p style="font-family: \'Iceland\';">ml300 - 30Lei</p>' +
-        '</div>' +
-        '<div class="col-sm d-flex flex-column align-items-center">' +
-        '<img class="rounded-5" src="image/americanocub.jpg" alt="Americano" width="200px" height="200px">' +
-        '<h5 class="coffee_name mt-3">AMERICANO</h5>' +
-        '<p>Un fluviu liniștit de apă fierbinte care se varsă peste espresso, diluându-l intensitatea și lăsând în urmă un gust curat și revigorant.</p>' +
-        '<p style="font-family: \'Iceland\';">ml120 - 20Lei</p>' +
+        '<div class="carousel-item">' +
+          '<img src="image/anturaj (1).jpg" alt="" class="d-block mx-auto" style="height: 500px;">' +
+          '<div class="carousel-caption">' +
+          '<button type="button" id="galeria" class="btn btn-dark border border-light">GALERIA</button>' +
         '</div>' +
         '</div>' +
+        '<div class="carousel-item">' +
+          '<img src="image/ice (1).jpg" alt="" class="d-block mx-auto" style="height: 500px;">' +
+          '<div class="carousel-caption">' +
+          '<button type="button" id="galeria" class="btn btn-dark border border-light">GALERIA</button>' +
         '</div>' +
-        '</section>');
-});
-document.getElementById('anturaj').addEventListener('click', function () {
-    document.getElementById('containerElement').innerHTML = "";
-    
+        '</div>' +
+        '<div class="carousel-item">' +
+          '<img src="image/baristaaa (3).jpg" alt="" class="d-block mx-auto" style="height: 500px;">' +
+          '<div class="carousel-caption">' +
+          '<button type="button" id="galeria" class="btn btn-dark border border-light">GALERIA</button>' +
+        '</div>' +
+        '</div>' +
+        '<div class="carousel-item">' +
+          '<img src="image/clienti (2).jpg" alt="" class="d-block mx-auto" style="height: 500px;">' +
+          '<div class="carousel-caption">' +
+          '<button type="button" id="galeria" class="btn btn-dark border border-light">GALERIA</button>' +
+        '</div>' +
+        '</div>' +
+        '<div class="carousel-item">' +
+          '<img src="image/hot (3).jpg" alt="" class="d-block mx-auto" style="height: 500px;">' +
+          '<div class="carousel-caption">' +
+          '<button type="button" id="galeria" class="btn btn-dark border border-light">GALERIA</button>' +
+        '</div>' +
+        '</div>' +
+      '</div>' +
+      '<!-- Left and right controls/icons -->' +
+      '<button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">' +
+        '<span class="carousel-control-prev-icon"></span>' +
+      '</button>' +
+      '<button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">' +
+        '<span class="carousel-control-next-icon"></span>' +
+      '</button>' +
+    '</div>' );
+console.log('Accesorii');
+document.getElementById('galeria').addEventListener('click', function () {
+document.getElementById('containerCarusel').innerHTML = "";
+document.getElementById('containerCarusel').insertAdjacentHTML('beforeend','<div id="demo" class="carousel slide" data-bs-ride="carousel">' +
+  '<!-- Indicators/dots -->' +
+  '<div class="carousel-indicators">' +
+    '<button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>' +
+    '<button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>' +
+    '<button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>' +
+    '<button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>' +
+    '<button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>' +
+    '<button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>' +
+  '</div>' +
+  '<!-- The slideshow/carousel -->' +
+  '<div class="carousel-inner bg-dark" style=" max-height: 500px;">' +
+    '<div class="carousel-item active">' +
+      '<img src="image/Accesorii (3).jpg" alt="Accesorii" class="d-block mx-auto" style="height: 500px;">' +
+      '<div class="carousel-caption">' +
+        '<button type="button" id="Accesorii" class="btn btn-dark border border-light">ACCESORII</button>' +
+        '<p class="fs-5 fw-bold" style="-webkit-text-stroke: 1px black;">Stil și funcționalitate în experiența cafelei.</p>' +
+      '</div>' +
+    '</div>' +
+    '<div class="carousel-item">' +
+      '<img src="image/anturaj (1).jpg" alt="" class="d-block mx-auto" style="height: 500px;">' +
+      '<div class="carousel-caption">' +
+        '<button type="button" id="anturaj" class="btn btn-dark border border-light">ANTURJ</button>' +
+        '<p class="fs-5 fw-bold" style="-webkit-text-stroke: 1px black;">O călătorie senzorială în lumea cafelei.</p>' +
+      '</div>' +
+    '</div>' +
+    '<div class="carousel-item">' +
+      '<img src="image/ice (1).jpg" alt="" class="d-block mx-auto" style="height: 500px;">' +
+      '<div class="carousel-caption">' +
+        '<button type="button" class="btn btn-dark border border-light">BĂUTURI RĂCORITOARE</button>' +
+        '<p class="fs-5 fw-bold" style="-webkit-text-stroke: 1px black;">Răcorire și relaxare într-un pahar.</p>' +
+      '</div>' +
+    '</div>' +
+    '<div class="carousel-item">' +
+      '<img src="image/baristaaa (3).jpg" alt="" class="d-block mx-auto" style="height: 500px;">' +
+      '<div class="carousel-caption">' +
+        '<button type="button" class="btn btn-dark border border-light">ECHIPA DE BARISTA</button>' +
+        '<p class="fs-5 fw-bold" style="-webkit-text-stroke: 1px black;">Artiștii care transformă cafeaua în magie. </p>' +
+      '</div>' +
+    '</div>' +
+    '<div class="carousel-item">' +
+      '<img src="image/clienti (2).jpg" alt="" class="d-block mx-auto" style="height: 500px;">' +
+      '<div class="carousel-caption">' +
+        '<button type="button" class="btn btn-dark border border-light">RELAȚII CLIENȚI</button>' +
+        '<p class="fs-5 fw-bold" style="-webkit-text-stroke: 1px black;">Puntea de încredere între noi și clienți.</p>' +
+      '</div>' +
+    '</div>' +
+    '<div class="carousel-item">' +
+      '<img src="image/hot (3).jpg" alt="" class="d-block mx-auto" style="height: 500px;">' +
+      '<div class="carousel-caption">' +
+        '<button type="button" class="btn btn-dark border border-light">BĂUTURI CALDE</button>' +
+        '<p class="fs-5 fw-bold" style="-webkit-text-stroke: 1px black;">Confort și liniște într-o ceașcă.</p>' +
+      '</div>' +
+    '</div>' +
+  '</div>' +
+  '<!-- Left and right controls/icons -->' +
+  '<button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">' +
+    '<span class="carousel-control-prev-icon"></span>' +
+  '</button>' +
+  '<button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">' +
+    '<span class="carousel-control-next-icon"></span>' +
+  '</button>' +
+'</div>' +
+'<div id="containerElement"></div>' +
+'</div>' +
+'<section id="coffee_page">' +
+  '<div class="container');   
 })
+});
