@@ -1,7 +1,7 @@
 
 header{
   
-background-image:url(image/BUYPNG.png) ;
+background-image:url(image/backcoffee.jpg) ;
 background-size: cover;
 }   
 
@@ -18,8 +18,11 @@ background: radial-gradient(50% 50%, #865348 58.85%, #3E1809 100%);
 .navbar{
     margin-inline: 48px;
 }
-.coffee_row img, #tea_page img{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.coffee_row img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.584);
+}
+#tea_page img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.584);
 }
 
 .textlogo{
